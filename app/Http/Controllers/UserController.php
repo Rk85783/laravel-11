@@ -9,9 +9,11 @@ class UserController extends Controller
     //
     function userHome()
     {
-        // return view('home');
-        $name = "Mr. Kumar";
-        $users = ["Rohit", "Neeraj", "Lokesh"];
-        return view('home', ['name' => $name, "users" => $users]);
+        return view('home');
+    }
+
+    function userAbout()
+    {
+        return view('about');
     }
 }
